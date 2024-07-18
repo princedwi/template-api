@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activity_logs",
+  "info": {
+    "singularName": "activity-log",
+    "pluralName": "activity-logs",
+    "displayName": "Activity_Log"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ActivityLogID": {
+      "type": "uid"
+    },
+    "ProjectID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project-info.project-info"
+    },
+    "ModifiedDate": {
+      "type": "datetime"
+    },
+    "Section": {
+      "type": "string"
+    },
+    "Entity": {
+      "type": "string"
+    },
+    "OldVal": {
+      "type": "string"
+    },
+    "NewVal": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "master_outputs",
+  "info": {
+    "singularName": "master-output",
+    "pluralName": "master-outputs",
+    "displayName": "MasterOutput"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MasterOutput_ID": {
+      "type": "integer"
+    },
+    "Field": {
+      "type": "string"
+    }
+  }
+}

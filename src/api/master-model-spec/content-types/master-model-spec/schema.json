@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "master_model_specs",
+  "info": {
+    "singularName": "master-model-spec",
+    "pluralName": "master-model-specs",
+    "displayName": "Master_Model_Spec "
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MasterModelSpecID": {
+      "type": "uid"
+    },
+    "ModelSpec": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "master_model_mappings",
+  "info": {
+    "singularName": "master-model-mapping",
+    "pluralName": "master-model-mappings",
+    "displayName": "Master_Model_Mapping"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MasterModelMappingID": {
+      "type": "uid"
+    },
+    "MasterModelTypeID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master-model-type.master-model-type"
+    },
+    "MasterModelSoftwareID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master-model-software.master-model-software"
+    },
+    "MasterModelSystemsID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master-model-system.master-model-system"
+    },
+    "MasterModelSpecID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master-model-spec.master-model-spec"
+    }
+  }
+}

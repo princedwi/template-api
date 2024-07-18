@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "output_details_tables",
+  "info": {
+    "singularName": "output-details-table",
+    "pluralName": "output-details-tables",
+    "displayName": "OutputDetailsTable"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "OutputDetailsID": {
+      "type": "uid"
+    },
+    "OutputID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::output-table.output-table"
+    },
+    "OutputName": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master-output.master-output"
+    },
+    "Recipient": {
+      "type": "string"
+    },
+    "Notes": {
+      "type": "string"
+    },
+    "ClientDeliverable": {
+      "type": "boolean"
+    }
+  }
+}

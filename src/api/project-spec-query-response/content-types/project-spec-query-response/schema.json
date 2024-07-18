@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_spec_query_responses",
+  "info": {
+    "singularName": "project-spec-query-response",
+    "pluralName": "project-spec-query-responses",
+    "displayName": "Project_Spec_Query_Response "
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ProjectSpecQueryResID": {
+      "type": "uid"
+    },
+    "MasterSpecQueryID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master-spec-query.master-spec-query"
+    },
+    "ProjectID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project-info.project-info"
+    },
+    "Response": {
+      "type": "string"
+    }
+  }
+}

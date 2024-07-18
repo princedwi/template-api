@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "data_tables",
+  "info": {
+    "singularName": "data-table",
+    "pluralName": "data-tables",
+    "displayName": "DataTable"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DataID": {
+      "type": "uid"
+    },
+    "ProjectID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project-info.project-info"
+    },
+    "Data": {
+      "type": "string"
+    },
+    "DescriptionUse": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "DataAdded": {
+      "type": "string"
+    },
+    "Source": {
+      "type": "string"
+    }
+  }
+}

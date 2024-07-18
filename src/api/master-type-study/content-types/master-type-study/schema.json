@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "master_type_studies",
+  "info": {
+    "singularName": "master-type-study",
+    "pluralName": "master-type-studies",
+    "displayName": "Master_Type_Study",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MasterTypeStudy_Id": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "Field": {
+      "type": "string",
+      "required": true
+    },
+    "project_info": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project-info.project-info"
+    }
+  }
+}

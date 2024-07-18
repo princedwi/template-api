@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "master_model_systems",
+  "info": {
+    "singularName": "master-model-system",
+    "pluralName": "master-model-systems",
+    "displayName": "Master_ModelSystem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Master_ModelSystem_ID": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "Field": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

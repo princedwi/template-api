@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "concept_reviews",
+  "info": {
+    "singularName": "concept-review",
+    "pluralName": "concept-reviews",
+    "displayName": "Concept_Review",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Modelling_Objective": {
+      "type": "string"
+    },
+    "Link_to_Hydrology": {
+      "type": "string"
+    },
+    "Main_Data_Gaps": {
+      "type": "string"
+    },
+    "Main_Assumption_Risk": {
+      "type": "string"
+    },
+    "Data_Management_Strategy": {
+      "type": "string"
+    },
+    "Modelling_Task": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master-modelling-task.master-modelling-task"
+    },
+    "Events_To_Be_Modelled": {
+      "type": "string"
+    },
+    "Climate_Change_Approach": {
+      "type": "string"
+    },
+    "ModellingTaskOther": {
+      "type": "string"
+    }
+  }
+}

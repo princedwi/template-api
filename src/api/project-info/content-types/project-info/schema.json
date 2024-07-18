@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_infos",
+  "info": {
+    "singularName": "project-info",
+    "pluralName": "project-infos",
+    "displayName": "Project_Info",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ProjectName": {
+      "type": "string",
+      "required": true
+    },
+    "ProjectCode": {
+      "type": "string"
+    },
+    "ProjectManager": {
+      "type": "string"
+    },
+    "ProjectVerifier": {
+      "type": "string"
+    },
+    "ClientScope": {
+      "type": "string"
+    },
+    "Budget": {
+      "type": "string"
+    },
+    "Originator": {
+      "type": "string"
+    },
+    "Lead": {
+      "type": "string"
+    },
+    "StudyOther": {
+      "type": "string"
+    },
+    "master_type_study": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master-type-study.master-type-study"
+    },
+    "Advisor": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "model_approches",
+  "info": {
+    "singularName": "model-approch",
+    "pluralName": "model-approches",
+    "displayName": "Model_Approch"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ProductID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project-info.project-info"
+    },
+    "ModelApproachID": {
+      "type": "uid",
+      "required": true
+    },
+    "ModelType_ID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master-model-type.master-model-type"
+    },
+    "ModelSoftware_ID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master-model-software.master-model-software"
+    },
+    "ModelSystem_ID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master-model-system.master-model-system"
+    }
+  }
+}

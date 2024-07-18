@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "master_spec_queries",
+  "info": {
+    "singularName": "master-spec-query",
+    "pluralName": "master-spec-queries",
+    "displayName": "Master_Spec_Query"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SpecQueryID": {
+      "type": "uid"
+    },
+    "MasterModelSpecID": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master-model-spec.master-model-spec"
+    },
+    "Query": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "Category1": {
+      "type": "string"
+    },
+    "Category2": {
+      "type": "string"
+    }
+  }
+}

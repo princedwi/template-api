@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "master_model_types",
+  "info": {
+    "singularName": "master-model-type",
+    "pluralName": "master-model-types",
+    "displayName": "Master_ModelType"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Master_ModelType_ID": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "Field": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
